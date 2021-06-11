@@ -1,0 +1,15 @@
+For input:
+val = input("enter a value:") -----------------------------take input as a string
+x,y,z = input("enter a name:").split(separater,maxsplit)
+x = list(map(int, input("Enter a multiple value: ").split()))
+
+For output:
+print(value,sep=" ",end="\n")
+
+For formating output string:
+print("Geeks : % 2d, Portal : % 5.2f" %(1, 05.333))
+print('Number one portal is {0}, {1}, and {other}.'.format('Geeks', 'For', other ='Geeks'))
+print("Geeks :{0:2d}, Portal :{1:8.2f}".format(12, 00.546))
+print (cstr.center(40, '#')
+print (cstr.rjust(40, '#')
+print (cstr.ljust(40, '#')
