@@ -1,0 +1,14 @@
+Sets:
+iterable, mutable and has no duplicate elements.
+S = set(list/string)
+S = {2,3,4,5}
+S.add(6)------------add only one element,Lists cannot be added to a set as elements whereas Tuples can be added because tuples are immutable.
+S.update()--------------------add multiple element,accepts lists, strings, as well as other sets as its arguments.
+Set items cannot be accessed by referring to an index But you can loop through the set items using a for loop.
+S.remove(value)--------if element not present it will give keyerror
+S.discard(value)-------if element not present it will not give keyerror
+S.pop()--------------remove arbitary element
+S.clear()--------------remove all elements
+a.union(b)------------- Values which exist in a or b
+a.intersection(b) -----------Values which exist in a and b
+a.difference(b)--------------- Values which exist in a but not in b
