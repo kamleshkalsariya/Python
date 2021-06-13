@@ -3,7 +3,7 @@ Operator:
 div1 = a / b  -----------------float division
 div2 = a // b -----------------floor division
 mod = a % b -------------------modulus
-And/or/not/in/not in/is/is not  Operator
+And/or/not/in/not in/is/is not -----conditional Operator
 exponent right to left associativity all other left to right associativity.
-Any(),All() function
+Any(),All() function ------for multiple True/False condition
 import operator -------------operator in-built function
