@@ -1,0 +1,9 @@
+Tuples:
+immutable, mostly heterogeneous elements
+tup = tuple(list/string)
+tup=(2,3,4)
+Tuple3 = Tuple1 + Tuple2--------------Concatenaton of tuples
+slicing/indexing same as list
+del tup
+sorted(tup)
+max/min/sum/len same as list
