@@ -1,0 +1,10 @@
+CONDITION:
+if (condition):
+    statement1
+elif (condition):
+    statement2
+else:
+    statement3
+
+nested if-else,
+print(True) if i < 15 else print(False)-----------short hand
