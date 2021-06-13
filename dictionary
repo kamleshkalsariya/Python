@@ -1,0 +1,13 @@
+Dictionary:
+pair of Key:value
+Dict = {1: 'Geeks', 2: 'For', 3: 'Geeks'}
+Dict[key] = value------------add a element in Dictionary
+Dict[key]
+Dict.get(key)-----------Accessing a element using key
+del Dict
+del Dict[key]
+Dict[][]--------------for nested Dictionary
+del Dict[][]
+pop_ele = Dict.pop(1) -----------used to return and delete the value of the key specified.
+Dict.clear()
+Dict.update(dict2)	Adds dictionary dict2’s key-values pairs to dict
