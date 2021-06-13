@@ -1,0 +1,12 @@
+FUNCTION:
+def fun_name(argument):
+    statements
+    return answer
+
+def my_Fun(*argv): -----------non-key worded, variable-length argument list
+    for arg in argv:
+
+def my_Fun(**kwargs):  ----------------keyworded, variable-length argument list
+    for key, value in kwargs.items():
+
+cube = lambda x: x*x*x ----------anonymous function
