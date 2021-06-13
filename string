@@ -1,0 +1,21 @@
+String:
+strn='welcome to my world.'
+n = len(strn)
+strn[i]-------------indexing(0 to n-1 or -n to -1)
+strn[2:-5] -------------slicing
+we can't replace/delete one character in string.
+s3=s1+s2  -------add two string
+del strn ---------delete string
+String1 = 'I\'m a "Geek"'  ----------------print >> I'm a "Geek"(escape sequencing)
+String1 = "C:\\Python\\Geeks\\"-----------print >> C:\Python\Geeks\
+String1 = r"This is \x47\x65\x65\x6b\x73."-----------To ignore the escape sequences in a String, r or R is used
+String1 = "|{:<10}|{:^10}|{:>10}|".format('Geeks','for','Geeks')--------for left/center/right align
+from string import Template-------------------template = Template('$$ is the symbol for $name')
+                    ---------------------------string = template.substitute(name='Dollar')
+list_of_string = strn.split('\n',limit) ------------------output list of string
+strn = " ".join(list_of_string)
+doc string write in triple quotes
+index = strn.find(pattern)
+import textwrap
+textwrap.wrap()---------It returns a list of output lines.
+textwrap.fill()-------- returns a single string containing the wrapped paragraph
