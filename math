@@ -1,0 +1,28 @@
+MATH:
+import math
+math.acos()-----------------Returns the arc cosine of a number in radians
+math.asin()-----------------Returns the arc sine of a number in radians
+math.atan()-----------------Returns the arc tangent of a number in radians
+math.atan2(y,x) ------------Returns the arc tangent of y/x in radians
+math.cos() -----------------Returns the cosine of a number
+math.sin()--------------	Returns the sine of a number
+math.tan()--------------	Returns the tangent of a number
+math.degrees()------------	Converts an angle from radians to degrees
+math.radians()----------	Converts a degree value into radians
+math.ceil()--------------   Rounds a number up to the nearest integer
+math.floor()-------------	Rounds a number down to the nearest integer
+math.fabs()-------------	Returns the absolute value of a number
+math.remainder()-----------	Returns the closest value that can make numerator completely divisible by the denominator
+math.fsum()--------------	Returns the sum of all items in any iterable (tuples, arrays, lists, etc.)
+math.gcd()--------------	Returns the greatest common divisor of two integers
+math.lcm()--------------	Returns the least common multiple of two integers
+math.log(num,base)--------	Returns the natural logarithm of a number, or the logarithm of number to base
+math.exp()----------------	Returns E raised to the power of x
+math.pow(x,y)-------------- x to the power y
+math.factorial()----------	Returns the factorial of a number
+math.perm()--------------	Returns the number of ways to choose k items from n items with order and without repetition
+math.comb()-------------	Returns the number of ways to choose k items from n items without repetition and order
+math.pow()--------------	Returns the value of x to the power of y
+math.sqrt()-------------	Returns the square root of a number
+math.e ------------------	Returns Euler's number (2.7182...)
+math.pi------------------	Returns PI (3.1415...)
