@@ -1,0 +1,25 @@
+lists:
+mutable elements, may contain duplicate
+lst = [1, 2, 'Geeks', 4, 'For', 6, 'Geeks']
+n = len(lst)
+lst[i] ------------------values of i is 0 to n-1
+lst.append(element,list,tuples)-----------------------add at end of list
+lst.insert(index,value)
+lst.extend(list)-------------------------------add multiple elements at the same time at the end of the list.
+lst.remove(value)
+lst.pop()/lst.pop(index)------------------------default it removes only the last element of the set and return that element
+lst[a:b]---------------------slicing
+to print the whole List in reverse order, use [::-1].
+lst.clear()-----------------to Removes all items from the list
+del lst
+lst.index(item)--------------Returns the index of the first matched item
+lst.count(item)------------Returns the count of number of items passed as an argumen
+lst.sort()--------------Sort items in a list in ascending order
+sorted(iterable, key, reverse)-------sorts any sequence (list, tuple, string) or collection (dictionary, set, frozenset) and always returns a list, for decending order reverse=True
+lst.reverse()-----------Reverse the order of items in the list
+string = " ".join(lst)-------------function to join the list elements using string as delimiter.
+max(lst)
+min(lst)
+sum(lst)
+list(map(function,lst))-------------------returns a list of the results after applying the given function to each item of a given iterable
+*lst-------------------unpacked Operator(convert list to number)
