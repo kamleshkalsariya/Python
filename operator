@@ -1,9 +1,0 @@
-Operator:
-+/-/*         ------------------add/subtract/multiply
-div1 = a / b  -----------------float division
-div2 = a // b -----------------floor division
-mod = a % b -------------------modulus
-And/or/not/in/not in/is/is not  Operator
-exponent right to left associativity all other left to right associativity.
-Any(),All() function
-import operator -------------operator in-built function
