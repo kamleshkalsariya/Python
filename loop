@@ -1,0 +1,22 @@
+LOOPS:
+For loop: definite iteration,
+syntax: for var in iterable:
+            statements
+
+continue Statement: It returns the control to the beginning of the loop.
+break Statement: It brings control out of the loop.
+pass Statement: We use pass statement to write empty loops. Pass is also used for empty control statements, function and classes.
+range(start,stop,step)---------------The range of integers end at stop – 1.
+for-else loop,
+
+While loop: Indefinite iteration,
+syntax:while expression:
+             statement(s)
+continue/break/pass/while-else loop,
+
+different form of range:
+for key, value in enumerate(['The', 'Big', 'Bang', 'Theory']):
+for question, answer in zip(questions, answers):
+for key,value in dict.iteritems/items():
+for i in sorted(set(lis)) :
+for i in reversed(lis) :
