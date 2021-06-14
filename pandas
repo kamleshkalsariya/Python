@@ -1,0 +1,69 @@
+Pandas:
+It is a Python package that offers various data structures and operations for manipulating numerical data and time series.
+Pandas DataFrame consists of three principal components, the data, rows, and columns.
+process of cleaning messy data is called data munging or data wrangling
+Pandas DataFrame is two-dimensional size-mutable, potentially heterogeneous tabular data structure with labeled axes (rows and columns).
+
+import pandas as pd
+df = pd.DataFrame(list of dict(rawwise data)/dict(columnwise data))----------------to create dataframe/table form dict or list/array
+df = pd.read_csv("nba.csv",arguments)-------reading csv file
+df  = pd.read_excel("name.xlsx","sheet_name")---------reading excel file
+https://pandas.pydata.org/docs/reference/api/pandas.read_csv.html--------reference for argument.
+
+rows,column = df.shape
+df['col_keys'].max()/min()/mean()/std()
+df.describe----------------give full statistics
+df.head(n)-----------to print specific no of first rows
+df.tail(n)-----------to print specific no of last rows
+df.columns-----------print key values
+df.col_key/df['col_key']---------------select any specific column
+df[['col_keys']]-----------print multiple columns
+type(df['col_key'])
+df['col_keys'][condition]------------give all output where condition true.
+df1=df.set_index('index_key')--------change row index
+df.loc["index_entity"]------------------select any specific rows
+df.iloc[integer]------------------retrieve rows and columns by position
+
+df.isnull/notnull()---------------return True/False at position
+df.fillna({key_value:value})-------values on NaN
+df.fillna(method='ffill/bfill')--------fill forward/backward value on NaN
+df.replace({key_value:special_value},np.NaN)-------special value on NaN
+df.replace({special_value:np.NaN/value})-------columnwise operations
+df.replace({key_value:'[A-Za-z]'},'',regex=True)-----columnwise regex function operation
+df.replace([values],[replaced_values])
+df.interpolate(method='time')-----mean value on NaN
+df.dropna(thresh=no.of valid value)----------------if not no. of valid value then drop it.
+dt=pd.date_range("01-01-2017","01-11-2017")
+idx = pd.Datetimeindex(dt)
+df.reindex(dt)
+
+g = df.groupby('col_key')
+g.get_group(key_value)
+g.max()/mean()/min()/
+for city,city_df in g:
+
+df = pd.concat([df1,df2],ignore_index=True)-------Concating two dataframe
+df = pd.concat([df1,df2],keys=[key1,key2,...])
+df.loc(key1)
+df = pd.merge([df1,df2],on=col_index,how='inner')----------interjoint between two dataframe
+
+for i, j in df.iterrows():------------------------------iterating over rows
+    print(i)-----------------i=raw_index (0-n)
+    print(j)-----------------j=table for ith raw with column index
+columns=list(df)--------------list of column_index
+for i in columns:-------------------------------------iterating over column
+    print (df[i][raw_index])
+
+Pandas Series is nothing but a column in an excel sheet. The axis labels are collectively called index.
+ser = pd.Series(list/array)
+ser[0:n]-------retrive series term with position
+ser[k]---------one item by indexing
+ser.loc[3:6]------by indexing
+ser.iloc[3:6]-----by position
+data = pd.Series([5, 2, 3,7], index=['a', 'b', 'c', 'd'])
+data1 = pd.Series([1, 6, 4, 9], index=['a', 'b', 'd', 'e'])
+data.add/sub/mul/div/pow/cov(data1, fill_value=0)----------with same index
+data["Salary"]= data["Salary"].astype(int)----------------converting dtypes
+salary_list = data["Salary"].tolist()--------------------converting into lists
+data["col_index"].sum/mean/prod/abs()---------doing operation over columns
+combine_first()	---------------------Method is used to combine two series into one
