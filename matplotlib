@@ -1,0 +1,36 @@
+Matplotlib:
+import matplotlib.pyplot as plt
+x=[1,2,3,4,5,6]
+y = [23,45,34,43,45,32]
+plt.xlabel('Day')
+plt.ylabel('Temparature')
+plt.title('weather')
+plt.plot(x, y, color='green', marker='o', linestyle='dashed',linewidth=2, markersize=12)
+plt.plot(x, y, 'go--', linewidth=2, markersize=12)--------both are same.
+https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.plot.html------for more information
+plt.plot(days, max_t, label="max")
+plt.plot(days, min_t, label="min")
+plt.legend(loc='upper right',shadow=True,fontsize='large')------------to print multiple data in a graph with legends
+plt.grid(axis='both',color='r', linestyle='-', linewidth=2)
+
+for bar plot:
+xpos = np.arange(len(company))
+plt.xticks(xpos,company)
+plt.ylabel("Revenue(Bln)")
+plt.title('US Technology Stocks')
+plt.subplot(2,1,1) ----------------------------------to change axis values
+plt.bar(xpos-0.2,revenue, width=0.4, label="Revenue")
+plt.bar(xpos+0.2,profit, width=0.4,label="Profit")
+plt.legend()
+plt.barh()--------for horizontal bar plot
+
+for histogram plot:
+plt.hist(blood_sugar, bins=[80,100,125,150], rwidth=0.95, color='g')----------------for one variable
+plt.hist([blood_sugar_men,blood_sugar_women], bins=[80,100,125,150], rwidth=0.95, color=['green','orange'],label=['men','women'])---for multiple variable
+plt.legend()
+plt.hist(blood_sugar, bins=[80,100,125,150], rwidth=0.95, orientation='horizontal')-------------------for horizontal histogram
+
+for pie chart:
+plt.axis("equal")
+plt.pie(exp_vals,labels=exp_labels, shadow=True, autopct='%1.1f%%',radius=1.5,explode=[0,0,0,0.1,0.2],counterclock=True, startangle=45)
+plt.show()
