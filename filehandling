@@ -1,0 +1,7 @@
+File handling:
+F1 = open(r"C:\Users\kamle\Download\file_name_with_extension","r/w/a/r+/w+/a+")-----To open a file in any mode
+F1.read()------read file as a one string
+F1..readlines()------list of each line
+F1.write("string\n")-----write string in file
+F1.writelines(List of string)---write lines in file
+F1.close()
