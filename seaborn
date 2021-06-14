@@ -1,0 +1,21 @@
+Saeborn:
+sns.get_dataset_names()
+tip = sns.load_dataset('tips') ------we can choose one of the data
+sns.barplot(x='day',y = 'total_bill',hue='sex',order=['Sun','Fri','Thur','Sat'],data = tip,estimator = np.median(),ci = 0 to 100,capsize = 0 to 1,color = 'green',saturation = 0.7 )
+to create a horizontal bar plot just change x/y variable
+sns.palplot(sns.color_palette('dark',10))-----------dark/light/winter_r/spring ------------to choose default color_palette
+sns.set_palette(['red','blue','green'] or list of color)
+sns.palplot(sns.color_palette())------------------to create own color_palette
+sns_plot = sns.barplot(x='day',y = 'total_bill',data = tip)
+fig = sns_plot.get_figure()
+fig = savefig(fname = 'plot.png')
+distplot consists of KDE plot, histogram, rug plot.
+sns.distplot(tip='total_bill',rug = True)------------adding rug plot
+sns.distplot(tip='total_bill',hist = False)--------remove hist sns_plot
+sns.distplot(tip='total_bill',norm_hist = True,kde = False)---------normalising histogram plot
+sns.distplot(tip='total_bill',rug_kws = {'color':'red','height':0.30})
+sns.distplot(tip='total_bill',hist_kws = {'color':'blue','alpha':0.2,'histtype':'stepfilled'})
+sns.distplot(tip='total_bill',kde_kws = {'color':'red','lw':4.0,'alpha':0.9})
+
+sns.boxplot(y = penguins.bill_length_mm,x = penguins.island)
+sns.boxplot(x = penguins.bill_length_mm,y = penguins.island,hue = penguins.sex,order = ['Biscoe','Torgersen','Dream'],color = 'g',whis = 0.7,showcaps = False)
