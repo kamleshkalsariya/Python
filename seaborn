@@ -1,4 +1,6 @@
-Saeborn:
+Seaborn:
+https://seaborn.pydata.org/
+import seaborn as sns
 sns.get_dataset_names()
 tip = sns.load_dataset('tips') ------we can choose one of the data
 sns.barplot(x='day',y = 'total_bill',hue='sex',order=['Sun','Fri','Thur','Sat'],data = tip,estimator = np.median(),ci = 0 to 100,capsize = 0 to 1,color = 'green',saturation = 0.7 )
