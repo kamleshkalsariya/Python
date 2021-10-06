@@ -1,1 +1,1 @@
-I have upload basic syntax and important code in this repository.
+I have uploaded basic syntax of python and important code in this repository.
