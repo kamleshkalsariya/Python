@@ -1,0 +1,46 @@
+Metacharacter:
+[] = use for specifying a character class and [abc] is same as [a-c]
+[^ ]  = match the characters not listed within the class
+    '^' as the first character of the class, it does not have special meaning other than this
+\  = remove their special meaning: \[ or \\
+\d = equivalent to the class [0-9]
+\D = equivalent to the class [^0-9]
+\s = equivalent to the class [ \t\n\r\f\v]
+\S = equivalent to the class [^ \t\n\r\f\v]
+\w = equivalent to the class [a-zA-Z0-9_]
+\W = equivalent to the class [^a-zA-Z0-9_]
+ . = matches anything except a newline character
+*  = previous character can be matched zero or more times
++  = previous character matches one or more times
+? =  matches either once or zero times
+{m,n} = must be at least m repetitions, and at most n
+        Omitting m is interpreted as a lower limit of 0, while omitting n results in an upper bound of infinity
+Metacharacters are not active inside classes
+r = backslashes are not handled in any special way
+    r"\n" is a two-character string containing '\' and 'n', while "\n" is a one-character string containing a newline
+| = A|B will match any string that matches either A or B regular expressions
+    To match a literal '|', use \|, or enclose it inside a character class, as in [|]
+^ = Matches at the beginning of lines
+$ = Matches at the end of a line
+
+
+import re
+p = re.compile('[a-z]+')
+m = p.match(str)              %only checks if the RE matches at the start of a string
+m = p.search(str)             %method of patterns scans through the string
+p.findall(str)                %gives list of matching strings
+iterator = p.finditer(str)    %gives iterator
+
+flags:
+re.A        %Make \w, \W, \b, \B, \s and \S perform ASCII-only matching
+re.S        %Make . match any character, including newlines
+re.I        %Do case-insensitive matches
+re.M        %Multi-line matching, affecting ^ and $
+re.X        %except when the whitespace is in a character class or preceded by an unescaped backslash
+
+Modifying Strings:
+p.split(string,limit)    %Split string by the matches of the regular expression
+p.sub(replacement, string, count=0/1/2)   %return string with replacement
+
+
+
